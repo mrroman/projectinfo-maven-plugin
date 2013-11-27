@@ -24,7 +24,9 @@
 	</properties>
 	
 	<scm>
-		<url>git:https://github.com/mrroman/projectinfo-maven-plugin.git</url>
+		<connection>git:https://github.com/mrroman/projectinfo-maven-plugin.git</connection>
+		<developerConnection>git:https://github.com/mrroman/projectinfo-maven-plugin.git</developerConnection>
+		<url>https://github.com/mrroman/projectinfo-maven-plugin</url>
 	</scm>
 
 	<dependencies>
@@ -93,6 +95,19 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+		     </plugin>
 		</plugins>
 	</build>
 	<profiles>
