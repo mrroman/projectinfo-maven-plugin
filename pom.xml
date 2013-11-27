@@ -8,6 +8,7 @@
 	<packaging>maven-plugin</packaging>
 
 	<name>projectinfo-maven-plugin Maven Plugin</name>
+	<description>Maven plugin for injecting project information about e.g. scm branch name, version, etc.</description>
 
 	<licenses>
 		<license>
@@ -21,6 +22,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
+	<scm>
+		<url>git:https://github.com/mrroman/projectinfo-maven-plugin.git</url>
+	</scm>
 
 	<dependencies>
 		<dependency>
