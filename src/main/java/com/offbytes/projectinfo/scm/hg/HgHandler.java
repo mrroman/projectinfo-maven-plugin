@@ -3,7 +3,7 @@ package com.offbytes.projectinfo.scm.hg;
 import java.io.File;
 
 import com.offbytes.projectinfo.Commands;
-import com.offbytes.projectinfo.SCMHandler;
+import com.offbytes.projectinfo.scm.SCMHandler;
 
 public class HgHandler implements SCMHandler {
 

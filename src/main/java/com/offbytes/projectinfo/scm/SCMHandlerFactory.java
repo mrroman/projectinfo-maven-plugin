@@ -1,14 +1,16 @@
-package com.offbytes.projectinfo;
+package com.offbytes.projectinfo.scm;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.offbytes.projectinfo.scm.hg.HgHandlerFactory;
 
 public abstract class SCMHandlerFactory {
 
 	private static List<SCMHandlerFactory> handlerFactories = new ArrayList<SCMHandlerFactory>();
 	
-	public static void registerHandlerFactory(SCMHandlerFactory handler) {
-		handlerFactories.add(handler);
+	static {
+		handlerFactories.add(new HgHandlerFactory());
 	}
 	
 	public static SCMHandler findHandler(String basePath) {

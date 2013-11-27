@@ -1,4 +1,4 @@
-package com.offbytes.projectinfo;
+package com.offbytes.projectinfo.scm;
 
 public interface SCMHandler {
 

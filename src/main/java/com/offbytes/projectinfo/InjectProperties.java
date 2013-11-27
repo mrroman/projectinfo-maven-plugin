@@ -23,6 +23,9 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
 
+import com.offbytes.projectinfo.scm.SCMHandler;
+import com.offbytes.projectinfo.scm.SCMHandlerFactory;
+
 /**
  * Goal which injects all information.
  * 
