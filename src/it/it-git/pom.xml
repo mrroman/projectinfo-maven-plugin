@@ -14,7 +14,11 @@
   </properties>
 
   <build>
-    <plugins>
+	<resources>
+	  <resource>resources</resource>
+	  <filtering>true</resource>
+	</resources>
+	<plugins>
       <plugin>
         <groupId>@project.groupId@</groupId>
         <artifactId>@project.artifactId@</artifactId>

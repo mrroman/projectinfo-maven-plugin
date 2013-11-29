@@ -1,3 +1,4 @@
-File touchFile = new File( basedir, "target/touch.txt" );
+new File(basedir, ".git").deleteDir()
+
 
 assert touchFile.isFile()
